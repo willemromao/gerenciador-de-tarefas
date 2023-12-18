@@ -6,7 +6,7 @@
 
 class Tarefa {
 private:
-    int id;
+    int id; 
     std::string descricao;
     bool concluida;
     static int totalTarefas;
@@ -39,6 +39,7 @@ public:
     virtual void exibir() const override;
 
     static int getTotalTarefasAmanha();
+    static void atualizarTotalTarefasAmanha(int novoTotal);
 };
 
 #endif // TAREFA_H

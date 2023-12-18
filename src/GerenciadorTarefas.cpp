@@ -126,7 +126,10 @@ void concluirTarefa(std::vector<Tarefa*>& tarefas) {
         std::cout << "Tarefa não encontrada.\n \n";
     }
 
+    TarefaAmanha::atualizarTotalTarefasAmanha(tarefas.size());
+
     Tarefa::atualizarTotalTarefas(tarefas.size());
+
 }
 
 void adicionarTarefaAmanha(std::vector<Tarefa*>& tarefas) {
@@ -138,6 +141,8 @@ void adicionarTarefaAmanha(std::vector<Tarefa*>& tarefas) {
     tarefas.push_back(novaTarefaAmanha);
 
     std::cout << "Tarefa para amanhã adicionada com sucesso!\n \n";
+
+    TarefaAmanha::atualizarTotalTarefasAmanha(tarefas.size());
 }
 
 void listarTarefasAmanha(const std::vector<Tarefa*>& tarefas) {

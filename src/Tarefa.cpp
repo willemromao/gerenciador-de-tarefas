@@ -30,6 +30,10 @@ int Tarefa::getTotalTarefas() {
     return totalTarefas;
 }
 
+void Tarefa::atualizarTotalTarefas(int novoTotal) {
+    totalTarefas = novoTotal;
+}
+
 std::ostream& operator<<(std::ostream& os, const Tarefa& tarefa) {
     os << "ID: " << tarefa.id << "\tDescrição: " << tarefa.descricao << "\tConcluída: " << (tarefa.concluida ? "Sim" : "Não");
     return os;
@@ -53,6 +57,6 @@ int TarefaAmanha::getTotalTarefasAmanha() {
     return totalTarefasAmanha;
 }
 
-void Tarefa::atualizarTotalTarefas(int novoTotal) {
-    totalTarefas = novoTotal;
+void TarefaAmanha::atualizarTotalTarefasAmanha(int novoTotal) {
+    totalTarefasAmanha = novoTotal;
 }
