@@ -1,4 +1,3 @@
-// GerenciadorTarefas.cpp
 #include "Tarefa.h"
 #include <vector>
 #include <fstream>
@@ -25,7 +24,7 @@ int main() {
         exibirMenu();
         std::cout << "Digite sua escolha: ";
         std::cin >> escolha;
-        std::cin.ignore();  // Limpar o buffer de entrada
+        std::cin.ignore();
 
         switch (escolha) {
             case 1:
@@ -166,7 +165,14 @@ void salvarTarefas(const std::vector<Tarefa*>& tarefas) {
 
     if (arquivo.is_open()) {
         for (const Tarefa* tarefa : tarefas) {
-            arquivo << tarefa->getId() << " " << tarefa->getDescricao() << "\n";
+            arquivo << tarefa->getId() << " " << tarefa->getDescricao();
+
+            const TarefaAmanha* tarefaAmanha = dynamic_cast<const TarefaAmanha*>(tarefa);
+            if (tarefaAmanha) {
+                arquivo << " (Tarefa para Amanhã)";
+            }
+
+            arquivo << "\n";
         }
 
         arquivo.close();
