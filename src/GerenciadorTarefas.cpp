@@ -1,8 +1,11 @@
+// GerenciadorTarefas.cpp
 #include "Tarefa.h"
 #include <vector>
 #include <fstream>
+#include <sstream>
 #include <iostream>
 #include <algorithm>
+#include <iomanip>
 
 // Protótipos das funções
 void exibirTarefas(const std::vector<Tarefa*>& tarefas);
@@ -10,6 +13,7 @@ void adicionarTarefa(std::vector<Tarefa*>& tarefas);
 void concluirTarefa(std::vector<Tarefa*>& tarefas);
 void adicionarTarefaAmanha(std::vector<Tarefa*>& tarefas);
 void listarTarefasAmanha(const std::vector<Tarefa*>& tarefas);
+void salvarTarefas(const std::vector<Tarefa*>& tarefas);
 
 void exibirMenu();
 
@@ -48,6 +52,8 @@ int main() {
 
     } while (escolha != 6);
 
+    salvarTarefas(tarefas);
+
     // Desalocação de memória
     for (Tarefa* tarefa : tarefas) {
         delete tarefa;
@@ -67,7 +73,7 @@ void exibirMenu() {
     std::cout << "3. Concluir e Remover\n";
     std::cout << "4. Adicionar Tarefa para Amanhã\n";
     std::cout << "5. Listar Tarefas para Amanhã\n";
-    std::cout << "6. Sair\n \n";
+    std::cout << "6. Sair e Salvar\n \n";
 }
 
 void exibirTarefas(const std::vector<Tarefa*>& tarefas) {
@@ -153,5 +159,20 @@ void listarTarefasAmanha(const std::vector<Tarefa*>& tarefas) {
             tarefaAmanha->exibir();
         }
     }
-    std::cout << "Total de tarefas para amanhã: " << TarefaAmanha::getTotalTarefasAmanha() << "\n \n";
 }
+
+void salvarTarefas(const std::vector<Tarefa*>& tarefas) {
+    std::ofstream arquivo("tarefas.txt");
+
+    if (arquivo.is_open()) {
+        for (const Tarefa* tarefa : tarefas) {
+            arquivo << tarefa->getId() << " " << tarefa->getDescricao() << "\n";
+        }
+
+        arquivo.close();
+        std::cout << "Tarefas salvas com sucesso!\n";
+    } else {
+        std::cerr << "Erro ao abrir o arquivo para salvar tarefas.\n";
+    }
+}
+
