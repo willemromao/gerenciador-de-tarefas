@@ -1,0 +1,119 @@
+\hypertarget{classTarefaAmanha}{}\doxysection{Referência da Classe Tarefa\+Amanha}
+\label{classTarefaAmanha}\index{TarefaAmanha@{TarefaAmanha}}
+
+
+Classe que representa uma tarefa agendada para amanhã.  
+
+
+
+
+{\ttfamily \#include $<$Tarefa.\+h$>$}
+
+
+
+Diagrama de hierarquia para Tarefa\+Amanha\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=167pt]{classTarefaAmanha__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Diagrama de colaboração para Tarefa\+Amanha\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=167pt]{classTarefaAmanha__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Membros Públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classTarefaAmanha_a475796682ab453b698ac71058e664595}{Tarefa\+Amanha}} (const std\+::string \&\mbox{\hyperlink{classTarefa_ab74879abecd79317ac0bb4b08cc1924b}{descricao}})
+\begin{DoxyCompactList}\small\item\em Construtor da classe \mbox{\hyperlink{classTarefaAmanha}{Tarefa\+Amanha}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classTarefaAmanha_a483a941d3fc5c01c64d30a86b11daec0}\label{classTarefaAmanha_a483a941d3fc5c01c64d30a86b11daec0}} 
+virtual \mbox{\hyperlink{classTarefaAmanha_a483a941d3fc5c01c64d30a86b11daec0}{$\sim$\+Tarefa\+Amanha}} ()
+\begin{DoxyCompactList}\small\item\em Destrutor da classe \mbox{\hyperlink{classTarefaAmanha}{Tarefa\+Amanha}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classTarefaAmanha_adaa73e038fbd94f74f70260cead9186a}\label{classTarefaAmanha_adaa73e038fbd94f74f70260cead9186a}} 
+virtual void \mbox{\hyperlink{classTarefaAmanha_adaa73e038fbd94f74f70260cead9186a}{exibir}} () const override
+\begin{DoxyCompactList}\small\item\em Sobrescreve a função exibir para exibir informações específicas de tarefas agendadas para amanhã. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Membros Públicos Estáticos}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{classTarefaAmanha_a3a2d95ef4c336d6051892415a3e45103}{get\+Total\+Tarefas\+Amanha}} ()
+\begin{DoxyCompactList}\small\item\em Obtém o total de tarefas agendadas para amanhã. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classTarefaAmanha_afb81f4e9a0bf331b3760e73bd4d87c09}{atualizar\+Total\+Tarefas\+Amanha}} (int novo\+Total)
+\begin{DoxyCompactList}\small\item\em Atualiza o total de tarefas agendadas para amanhã. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Atributos Privados Estáticos}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{classTarefaAmanha_a41c8a4787b12db46b1d6bcf4af3a4770}{total\+Tarefas\+Amanha}} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrição detalhada}
+Classe que representa uma tarefa agendada para amanhã. 
+
+\doxysubsection{Construtores e Destrutores}
+\mbox{\Hypertarget{classTarefaAmanha_a475796682ab453b698ac71058e664595}\label{classTarefaAmanha_a475796682ab453b698ac71058e664595}} 
+\index{TarefaAmanha@{TarefaAmanha}!TarefaAmanha@{TarefaAmanha}}
+\index{TarefaAmanha@{TarefaAmanha}!TarefaAmanha@{TarefaAmanha}}
+\doxysubsubsection{\texorpdfstring{TarefaAmanha()}{TarefaAmanha()}}
+{\footnotesize\ttfamily Tarefa\+Amanha\+::\+Tarefa\+Amanha (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{descricao }\end{DoxyParamCaption})}
+
+
+
+Construtor da classe \mbox{\hyperlink{classTarefaAmanha}{Tarefa\+Amanha}}. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em descricao} & Descrição da tarefa agendada para amanhã. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Funções membros}
+\mbox{\Hypertarget{classTarefaAmanha_afb81f4e9a0bf331b3760e73bd4d87c09}\label{classTarefaAmanha_afb81f4e9a0bf331b3760e73bd4d87c09}} 
+\index{TarefaAmanha@{TarefaAmanha}!atualizarTotalTarefasAmanha@{atualizarTotalTarefasAmanha}}
+\index{atualizarTotalTarefasAmanha@{atualizarTotalTarefasAmanha}!TarefaAmanha@{TarefaAmanha}}
+\doxysubsubsection{\texorpdfstring{atualizarTotalTarefasAmanha()}{atualizarTotalTarefasAmanha()}}
+{\footnotesize\ttfamily void Tarefa\+Amanha\+::atualizar\+Total\+Tarefas\+Amanha (\begin{DoxyParamCaption}\item[{int}]{novo\+Total }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Atualiza o total de tarefas agendadas para amanhã. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em novo\+Total} & Novo total de tarefas agendadas para amanhã. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classTarefaAmanha_a3a2d95ef4c336d6051892415a3e45103}\label{classTarefaAmanha_a3a2d95ef4c336d6051892415a3e45103}} 
+\index{TarefaAmanha@{TarefaAmanha}!getTotalTarefasAmanha@{getTotalTarefasAmanha}}
+\index{getTotalTarefasAmanha@{getTotalTarefasAmanha}!TarefaAmanha@{TarefaAmanha}}
+\doxysubsubsection{\texorpdfstring{getTotalTarefasAmanha()}{getTotalTarefasAmanha()}}
+{\footnotesize\ttfamily int Tarefa\+Amanha\+::get\+Total\+Tarefas\+Amanha (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Obtém o total de tarefas agendadas para amanhã. 
+
+\begin{DoxyReturn}{Retorna}
+Total de tarefas agendadas para amanhã. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Atributos}
+\mbox{\Hypertarget{classTarefaAmanha_a41c8a4787b12db46b1d6bcf4af3a4770}\label{classTarefaAmanha_a41c8a4787b12db46b1d6bcf4af3a4770}} 
+\index{TarefaAmanha@{TarefaAmanha}!totalTarefasAmanha@{totalTarefasAmanha}}
+\index{totalTarefasAmanha@{totalTarefasAmanha}!TarefaAmanha@{TarefaAmanha}}
+\doxysubsubsection{\texorpdfstring{totalTarefasAmanha}{totalTarefasAmanha}}
+{\footnotesize\ttfamily int Tarefa\+Amanha\+::total\+Tarefas\+Amanha = 0\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+Total de tarefas agendadas para amanhã. 
+
+A documentação para essa classe foi gerada a partir dos seguintes arquivos\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{Tarefa_8h}{Tarefa.\+h}}\item 
+src/\mbox{\hyperlink{Tarefa_8cpp}{Tarefa.\+cpp}}\end{DoxyCompactItemize}

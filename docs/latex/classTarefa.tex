@@ -1,0 +1,213 @@
+\hypertarget{classTarefa}{}\doxysection{Referência da Classe Tarefa}
+\label{classTarefa}\index{Tarefa@{Tarefa}}
+
+
+Classe que representa uma tarefa.  
+
+
+
+
+{\ttfamily \#include $<$Tarefa.\+h$>$}
+
+
+
+Diagrama de hierarquia para Tarefa\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=167pt]{classTarefa__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Membros Públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classTarefa_a7872c300334214a339580b167c535952}{Tarefa}} (const std\+::string \&\mbox{\hyperlink{classTarefa_ab74879abecd79317ac0bb4b08cc1924b}{descricao}})
+\begin{DoxyCompactList}\small\item\em Construtor da classe \mbox{\hyperlink{classTarefa}{Tarefa}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classTarefa_ac0aded2b1a1333b92633e4f82d3d3ab7}\label{classTarefa_ac0aded2b1a1333b92633e4f82d3d3ab7}} 
+virtual \mbox{\hyperlink{classTarefa_ac0aded2b1a1333b92633e4f82d3d3ab7}{$\sim$\+Tarefa}} ()
+\begin{DoxyCompactList}\small\item\em Destrutor da classe \mbox{\hyperlink{classTarefa}{Tarefa}}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classTarefa_ad5d08f27ceaabbaaac6850f70c4b4788}{get\+Id}} () const
+\begin{DoxyCompactList}\small\item\em Obtém o ID da tarefa. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classTarefa_a55ac0323625949d76b2bf98cec73f6e1}{get\+Descricao}} () const
+\begin{DoxyCompactList}\small\item\em Obtém a descrição da tarefa. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classTarefa_af8b8aeca1f94992a76524d8698797184}{esta\+Concluida}} () const
+\begin{DoxyCompactList}\small\item\em Verifica se a tarefa está concluída. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classTarefa_ad202aff94e7f964fa4f43848b394f0d5}\label{classTarefa_ad202aff94e7f964fa4f43848b394f0d5}} 
+void \mbox{\hyperlink{classTarefa_ad202aff94e7f964fa4f43848b394f0d5}{concluir}} ()
+\begin{DoxyCompactList}\small\item\em Marca a tarefa como concluída. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classTarefa_af7376caecdb778801afe50eac5ac24fd}\label{classTarefa_af7376caecdb778801afe50eac5ac24fd}} 
+virtual void \mbox{\hyperlink{classTarefa_af7376caecdb778801afe50eac5ac24fd}{exibir}} () const
+\begin{DoxyCompactList}\small\item\em Exibe informações sobre a tarefa. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Membros Públicos Estáticos}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{classTarefa_a2e21cfd5c4e17a6b07a5f74012a59cec}{get\+Total\+Tarefas}} ()
+\begin{DoxyCompactList}\small\item\em Obtém o total de tarefas criadas. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classTarefa_ac26ff44fe8608f67098acc6abbe5e9ff}{atualizar\+Total\+Tarefas}} (int novo\+Total)
+\begin{DoxyCompactList}\small\item\em Atualiza o total de tarefas criadas. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Atributos Privados}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classTarefa_aed38d3bbfc9bef80b2aaca7f15c10170}{id}}
+\item 
+std\+::string \mbox{\hyperlink{classTarefa_ab74879abecd79317ac0bb4b08cc1924b}{descricao}}
+\item 
+bool \mbox{\hyperlink{classTarefa_a20dfa27a6106140d2a6d7f3ae765153f}{concluida}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Atributos Privados Estáticos}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{classTarefa_a2be045cdb4af8e768184fc1df5c2ccb2}{total\+Tarefas}} = 0
+\end{DoxyCompactItemize}
+\doxysubsection*{Amigas}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \mbox{\hyperlink{classTarefa_a714509f989c0efb138f693e465e86b50}{operator$<$$<$}} (std\+::ostream \&os, const \mbox{\hyperlink{classTarefa}{Tarefa}} \&tarefa)
+\begin{DoxyCompactList}\small\item\em Sobrecarga do operador de saída para facilitar a exibição de uma tarefa. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrição detalhada}
+Classe que representa uma tarefa. 
+
+\doxysubsection{Construtores e Destrutores}
+\mbox{\Hypertarget{classTarefa_a7872c300334214a339580b167c535952}\label{classTarefa_a7872c300334214a339580b167c535952}} 
+\index{Tarefa@{Tarefa}!Tarefa@{Tarefa}}
+\index{Tarefa@{Tarefa}!Tarefa@{Tarefa}}
+\doxysubsubsection{\texorpdfstring{Tarefa()}{Tarefa()}}
+{\footnotesize\ttfamily Tarefa\+::\+Tarefa (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{descricao }\end{DoxyParamCaption})}
+
+
+
+Construtor da classe \mbox{\hyperlink{classTarefa}{Tarefa}}. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em descricao} & Descrição da tarefa. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Funções membros}
+\mbox{\Hypertarget{classTarefa_ac26ff44fe8608f67098acc6abbe5e9ff}\label{classTarefa_ac26ff44fe8608f67098acc6abbe5e9ff}} 
+\index{Tarefa@{Tarefa}!atualizarTotalTarefas@{atualizarTotalTarefas}}
+\index{atualizarTotalTarefas@{atualizarTotalTarefas}!Tarefa@{Tarefa}}
+\doxysubsubsection{\texorpdfstring{atualizarTotalTarefas()}{atualizarTotalTarefas()}}
+{\footnotesize\ttfamily void Tarefa\+::atualizar\+Total\+Tarefas (\begin{DoxyParamCaption}\item[{int}]{novo\+Total }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Atualiza o total de tarefas criadas. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em novo\+Total} & Novo total de tarefas. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classTarefa_af8b8aeca1f94992a76524d8698797184}\label{classTarefa_af8b8aeca1f94992a76524d8698797184}} 
+\index{Tarefa@{Tarefa}!estaConcluida@{estaConcluida}}
+\index{estaConcluida@{estaConcluida}!Tarefa@{Tarefa}}
+\doxysubsubsection{\texorpdfstring{estaConcluida()}{estaConcluida()}}
+{\footnotesize\ttfamily bool Tarefa\+::esta\+Concluida (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Verifica se a tarefa está concluída. 
+
+\begin{DoxyReturn}{Retorna}
+true se a tarefa estiver concluída, false caso contrário. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTarefa_a55ac0323625949d76b2bf98cec73f6e1}\label{classTarefa_a55ac0323625949d76b2bf98cec73f6e1}} 
+\index{Tarefa@{Tarefa}!getDescricao@{getDescricao}}
+\index{getDescricao@{getDescricao}!Tarefa@{Tarefa}}
+\doxysubsubsection{\texorpdfstring{getDescricao()}{getDescricao()}}
+{\footnotesize\ttfamily std\+::string Tarefa\+::get\+Descricao (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Obtém a descrição da tarefa. 
+
+\begin{DoxyReturn}{Retorna}
+Descrição da tarefa. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTarefa_ad5d08f27ceaabbaaac6850f70c4b4788}\label{classTarefa_ad5d08f27ceaabbaaac6850f70c4b4788}} 
+\index{Tarefa@{Tarefa}!getId@{getId}}
+\index{getId@{getId}!Tarefa@{Tarefa}}
+\doxysubsubsection{\texorpdfstring{getId()}{getId()}}
+{\footnotesize\ttfamily int Tarefa\+::get\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Obtém o ID da tarefa. 
+
+\begin{DoxyReturn}{Retorna}
+ID da tarefa. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTarefa_a2e21cfd5c4e17a6b07a5f74012a59cec}\label{classTarefa_a2e21cfd5c4e17a6b07a5f74012a59cec}} 
+\index{Tarefa@{Tarefa}!getTotalTarefas@{getTotalTarefas}}
+\index{getTotalTarefas@{getTotalTarefas}!Tarefa@{Tarefa}}
+\doxysubsubsection{\texorpdfstring{getTotalTarefas()}{getTotalTarefas()}}
+{\footnotesize\ttfamily int Tarefa\+::get\+Total\+Tarefas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Obtém o total de tarefas criadas. 
+
+\begin{DoxyReturn}{Retorna}
+Total de tarefas. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Amigas e Funções Relacionadas}
+\mbox{\Hypertarget{classTarefa_a714509f989c0efb138f693e465e86b50}\label{classTarefa_a714509f989c0efb138f693e465e86b50}} 
+\index{Tarefa@{Tarefa}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Tarefa@{Tarefa}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily std\+::ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os,  }\item[{const \mbox{\hyperlink{classTarefa}{Tarefa}} \&}]{tarefa }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Sobrecarga do operador de saída para facilitar a exibição de uma tarefa. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em os} & Stream de saída. \\
+\hline
+{\em tarefa} & \mbox{\hyperlink{classTarefa}{Tarefa}} a ser exibida. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Stream de saída atualizada. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Atributos}
+\mbox{\Hypertarget{classTarefa_a20dfa27a6106140d2a6d7f3ae765153f}\label{classTarefa_a20dfa27a6106140d2a6d7f3ae765153f}} 
+\index{Tarefa@{Tarefa}!concluida@{concluida}}
+\index{concluida@{concluida}!Tarefa@{Tarefa}}
+\doxysubsubsection{\texorpdfstring{concluida}{concluida}}
+{\footnotesize\ttfamily bool Tarefa\+::concluida\hspace{0.3cm}{\ttfamily [private]}}
+
+Indica se a tarefa está concluída. \mbox{\Hypertarget{classTarefa_ab74879abecd79317ac0bb4b08cc1924b}\label{classTarefa_ab74879abecd79317ac0bb4b08cc1924b}} 
+\index{Tarefa@{Tarefa}!descricao@{descricao}}
+\index{descricao@{descricao}!Tarefa@{Tarefa}}
+\doxysubsubsection{\texorpdfstring{descricao}{descricao}}
+{\footnotesize\ttfamily std\+::string Tarefa\+::descricao\hspace{0.3cm}{\ttfamily [private]}}
+
+Descrição da tarefa. \mbox{\Hypertarget{classTarefa_aed38d3bbfc9bef80b2aaca7f15c10170}\label{classTarefa_aed38d3bbfc9bef80b2aaca7f15c10170}} 
+\index{Tarefa@{Tarefa}!id@{id}}
+\index{id@{id}!Tarefa@{Tarefa}}
+\doxysubsubsection{\texorpdfstring{id}{id}}
+{\footnotesize\ttfamily int Tarefa\+::id\hspace{0.3cm}{\ttfamily [private]}}
+
+Identificador único da tarefa. \mbox{\Hypertarget{classTarefa_a2be045cdb4af8e768184fc1df5c2ccb2}\label{classTarefa_a2be045cdb4af8e768184fc1df5c2ccb2}} 
+\index{Tarefa@{Tarefa}!totalTarefas@{totalTarefas}}
+\index{totalTarefas@{totalTarefas}!Tarefa@{Tarefa}}
+\doxysubsubsection{\texorpdfstring{totalTarefas}{totalTarefas}}
+{\footnotesize\ttfamily int Tarefa\+::total\+Tarefas = 0\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+Total de tarefas criadas. 
+
+A documentação para essa classe foi gerada a partir dos seguintes arquivos\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{Tarefa_8h}{Tarefa.\+h}}\item 
+src/\mbox{\hyperlink{Tarefa_8cpp}{Tarefa.\+cpp}}\end{DoxyCompactItemize}

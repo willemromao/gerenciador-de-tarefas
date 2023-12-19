@@ -1,0 +1,152 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Gerenciador de Tarefas: Código-Fonte de src/Tarefa.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Gerenciador de Tarefas
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Busca','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Busca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Tarefa.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="Tarefa_8h.html">Vá para a documentação desse arquivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef TAREFA_H</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define TAREFA_H</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="classTarefa.html">   17</a></span>&#160;<span class="keyword">class </span><a class="code" href="classTarefa.html">Tarefa</a> {</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="classTarefa.html#aed38d3bbfc9bef80b2aaca7f15c10170">   19</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classTarefa.html#aed38d3bbfc9bef80b2aaca7f15c10170">id</a>; </div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="classTarefa.html#ab74879abecd79317ac0bb4b08cc1924b">   20</a></span>&#160;    std::string <a class="code" href="classTarefa.html#ab74879abecd79317ac0bb4b08cc1924b">descricao</a>; </div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="classTarefa.html#a20dfa27a6106140d2a6d7f3ae765153f">   21</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classTarefa.html#a20dfa27a6106140d2a6d7f3ae765153f">concluida</a>; </div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="classTarefa.html#a2be045cdb4af8e768184fc1df5c2ccb2">   22</a></span>&#160;    <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code" href="classTarefa.html#a2be045cdb4af8e768184fc1df5c2ccb2">totalTarefas</a>; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="code" href="classTarefa.html#a7872c300334214a339580b167c535952">Tarefa</a>(<span class="keyword">const</span> std::string&amp; <a class="code" href="classTarefa.html#ab74879abecd79317ac0bb4b08cc1924b">descricao</a>);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classTarefa.html#ac0aded2b1a1333b92633e4f82d3d3ab7">~Tarefa</a>();</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classTarefa.html#ad5d08f27ceaabbaaac6850f70c4b4788">getId</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    std::string <a class="code" href="classTarefa.html#a55ac0323625949d76b2bf98cec73f6e1">getDescricao</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classTarefa.html#af8b8aeca1f94992a76524d8698797184">estaConcluida</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classTarefa.html#ad202aff94e7f964fa4f43848b394f0d5">concluir</a>();</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classTarefa.html#af7376caecdb778801afe50eac5ac24fd">exibir</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code" href="classTarefa.html#a2e21cfd5c4e17a6b07a5f74012a59cec">getTotalTarefas</a>();</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classTarefa.html#ac26ff44fe8608f67098acc6abbe5e9ff">atualizarTotalTarefas</a>(<span class="keywordtype">int</span> novoTotal);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keyword">friend</span> std::ostream&amp; <a class="code" href="classTarefa.html#a714509f989c0efb138f693e465e86b50">operator&lt;&lt;</a>(std::ostream&amp; os, <span class="keyword">const</span> <a class="code" href="classTarefa.html">Tarefa</a>&amp; tarefa);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;};</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="classTarefaAmanha.html">   88</a></span>&#160;<span class="keyword">class </span><a class="code" href="classTarefaAmanha.html">TarefaAmanha</a> : <span class="keyword">public</span> <a class="code" href="classTarefa.html">Tarefa</a> {</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="classTarefaAmanha.html#a41c8a4787b12db46b1d6bcf4af3a4770">   90</a></span>&#160;    <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code" href="classTarefaAmanha.html#a41c8a4787b12db46b1d6bcf4af3a4770">totalTarefasAmanha</a>; </div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <a class="code" href="classTarefaAmanha.html#a475796682ab453b698ac71058e664595">TarefaAmanha</a>(<span class="keyword">const</span> std::string&amp; <a class="code" href="classTarefa.html#ab74879abecd79317ac0bb4b08cc1924b">descricao</a>);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classTarefaAmanha.html#a483a941d3fc5c01c64d30a86b11daec0">~TarefaAmanha</a>();</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classTarefaAmanha.html#adaa73e038fbd94f74f70260cead9186a">exibir</a>() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code" href="classTarefaAmanha.html#a3a2d95ef4c336d6051892415a3e45103">getTotalTarefasAmanha</a>();</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classTarefaAmanha.html#afb81f4e9a0bf331b3760e73bd4d87c09">atualizarTotalTarefasAmanha</a>(<span class="keywordtype">int</span> novoTotal);</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;};</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160; </div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// TAREFA_H</span></div>
+<div class="ttc" id="aclassTarefaAmanha_html"><div class="ttname"><a href="classTarefaAmanha.html">TarefaAmanha</a></div><div class="ttdoc">Classe que representa uma tarefa agendada para amanhã.</div><div class="ttdef"><b>Definition:</b> Tarefa.h:88</div></div>
+<div class="ttc" id="aclassTarefaAmanha_html_a3a2d95ef4c336d6051892415a3e45103"><div class="ttname"><a href="classTarefaAmanha.html#a3a2d95ef4c336d6051892415a3e45103">TarefaAmanha::getTotalTarefasAmanha</a></div><div class="ttdeci">static int getTotalTarefasAmanha()</div><div class="ttdoc">Obtém o total de tarefas agendadas para amanhã.</div><div class="ttdef"><b>Definition:</b> Tarefa.cpp:121</div></div>
+<div class="ttc" id="aclassTarefaAmanha_html_a41c8a4787b12db46b1d6bcf4af3a4770"><div class="ttname"><a href="classTarefaAmanha.html#a41c8a4787b12db46b1d6bcf4af3a4770">TarefaAmanha::totalTarefasAmanha</a></div><div class="ttdeci">static int totalTarefasAmanha</div><div class="ttdef"><b>Definition:</b> Tarefa.h:90</div></div>
+<div class="ttc" id="aclassTarefaAmanha_html_a475796682ab453b698ac71058e664595"><div class="ttname"><a href="classTarefaAmanha.html#a475796682ab453b698ac71058e664595">TarefaAmanha::TarefaAmanha</a></div><div class="ttdeci">TarefaAmanha(const std::string &amp;descricao)</div><div class="ttdoc">Construtor da classe TarefaAmanha.</div><div class="ttdef"><b>Definition:</b> Tarefa.cpp:99</div></div>
+<div class="ttc" id="aclassTarefaAmanha_html_a483a941d3fc5c01c64d30a86b11daec0"><div class="ttname"><a href="classTarefaAmanha.html#a483a941d3fc5c01c64d30a86b11daec0">TarefaAmanha::~TarefaAmanha</a></div><div class="ttdeci">virtual ~TarefaAmanha()</div><div class="ttdoc">Destrutor da classe TarefaAmanha.</div><div class="ttdef"><b>Definition:</b> Tarefa.cpp:106</div></div>
+<div class="ttc" id="aclassTarefaAmanha_html_adaa73e038fbd94f74f70260cead9186a"><div class="ttname"><a href="classTarefaAmanha.html#adaa73e038fbd94f74f70260cead9186a">TarefaAmanha::exibir</a></div><div class="ttdeci">virtual void exibir() const override</div><div class="ttdoc">Sobrescreve a função exibir para exibir informações específicas de tarefas agendadas para amanhã.</div><div class="ttdef"><b>Definition:</b> Tarefa.cpp:113</div></div>
+<div class="ttc" id="aclassTarefaAmanha_html_afb81f4e9a0bf331b3760e73bd4d87c09"><div class="ttname"><a href="classTarefaAmanha.html#afb81f4e9a0bf331b3760e73bd4d87c09">TarefaAmanha::atualizarTotalTarefasAmanha</a></div><div class="ttdeci">static void atualizarTotalTarefasAmanha(int novoTotal)</div><div class="ttdoc">Atualiza o total de tarefas agendadas para amanhã.</div><div class="ttdef"><b>Definition:</b> Tarefa.cpp:129</div></div>
+<div class="ttc" id="aclassTarefa_html"><div class="ttname"><a href="classTarefa.html">Tarefa</a></div><div class="ttdoc">Classe que representa uma tarefa.</div><div class="ttdef"><b>Definition:</b> Tarefa.h:17</div></div>
+<div class="ttc" id="aclassTarefa_html_a20dfa27a6106140d2a6d7f3ae765153f"><div class="ttname"><a href="classTarefa.html#a20dfa27a6106140d2a6d7f3ae765153f">Tarefa::concluida</a></div><div class="ttdeci">bool concluida</div><div class="ttdef"><b>Definition:</b> Tarefa.h:21</div></div>
+<div class="ttc" id="aclassTarefa_html_a2be045cdb4af8e768184fc1df5c2ccb2"><div class="ttname"><a href="classTarefa.html#a2be045cdb4af8e768184fc1df5c2ccb2">Tarefa::totalTarefas</a></div><div class="ttdeci">static int totalTarefas</div><div class="ttdef"><b>Definition:</b> Tarefa.h:22</div></div>
+<div class="ttc" id="aclassTarefa_html_a2e21cfd5c4e17a6b07a5f74012a59cec"><div class="ttname"><a href="classTarefa.html#a2e21cfd5c4e17a6b07a5f74012a59cec">Tarefa::getTotalTarefas</a></div><div class="ttdeci">static int getTotalTarefas()</div><div class="ttdoc">Obtém o total de tarefas criadas.</div><div class="ttdef"><b>Definition:</b> Tarefa.cpp:69</div></div>
+<div class="ttc" id="aclassTarefa_html_a55ac0323625949d76b2bf98cec73f6e1"><div class="ttname"><a href="classTarefa.html#a55ac0323625949d76b2bf98cec73f6e1">Tarefa::getDescricao</a></div><div class="ttdeci">std::string getDescricao() const</div><div class="ttdoc">Obtém a descrição da tarefa.</div><div class="ttdef"><b>Definition:</b> Tarefa.cpp:39</div></div>
+<div class="ttc" id="aclassTarefa_html_a714509f989c0efb138f693e465e86b50"><div class="ttname"><a href="classTarefa.html#a714509f989c0efb138f693e465e86b50">Tarefa::operator&lt;&lt;</a></div><div class="ttdeci">friend std::ostream &amp; operator&lt;&lt;(std::ostream &amp;os, const Tarefa &amp;tarefa)</div><div class="ttdoc">Sobrecarga do operador de saída para facilitar a exibição de uma tarefa.</div><div class="ttdef"><b>Definition:</b> Tarefa.cpp:87</div></div>
+<div class="ttc" id="aclassTarefa_html_a7872c300334214a339580b167c535952"><div class="ttname"><a href="classTarefa.html#a7872c300334214a339580b167c535952">Tarefa::Tarefa</a></div><div class="ttdeci">Tarefa(const std::string &amp;descricao)</div><div class="ttdoc">Construtor da classe Tarefa.</div><div class="ttdef"><b>Definition:</b> Tarefa.cpp:20</div></div>
+<div class="ttc" id="aclassTarefa_html_ab74879abecd79317ac0bb4b08cc1924b"><div class="ttname"><a href="classTarefa.html#ab74879abecd79317ac0bb4b08cc1924b">Tarefa::descricao</a></div><div class="ttdeci">std::string descricao</div><div class="ttdef"><b>Definition:</b> Tarefa.h:20</div></div>
+<div class="ttc" id="aclassTarefa_html_ac0aded2b1a1333b92633e4f82d3d3ab7"><div class="ttname"><a href="classTarefa.html#ac0aded2b1a1333b92633e4f82d3d3ab7">Tarefa::~Tarefa</a></div><div class="ttdeci">virtual ~Tarefa()</div><div class="ttdoc">Destrutor da classe Tarefa.</div><div class="ttdef"><b>Definition:</b> Tarefa.cpp:25</div></div>
+<div class="ttc" id="aclassTarefa_html_ac26ff44fe8608f67098acc6abbe5e9ff"><div class="ttname"><a href="classTarefa.html#ac26ff44fe8608f67098acc6abbe5e9ff">Tarefa::atualizarTotalTarefas</a></div><div class="ttdeci">static void atualizarTotalTarefas(int novoTotal)</div><div class="ttdoc">Atualiza o total de tarefas criadas.</div><div class="ttdef"><b>Definition:</b> Tarefa.cpp:77</div></div>
+<div class="ttc" id="aclassTarefa_html_ad202aff94e7f964fa4f43848b394f0d5"><div class="ttname"><a href="classTarefa.html#ad202aff94e7f964fa4f43848b394f0d5">Tarefa::concluir</a></div><div class="ttdeci">void concluir()</div><div class="ttdoc">Marca a tarefa como concluída.</div><div class="ttdef"><b>Definition:</b> Tarefa.cpp:54</div></div>
+<div class="ttc" id="aclassTarefa_html_ad5d08f27ceaabbaaac6850f70c4b4788"><div class="ttname"><a href="classTarefa.html#ad5d08f27ceaabbaaac6850f70c4b4788">Tarefa::getId</a></div><div class="ttdeci">int getId() const</div><div class="ttdoc">Obtém o ID da tarefa.</div><div class="ttdef"><b>Definition:</b> Tarefa.cpp:31</div></div>
+<div class="ttc" id="aclassTarefa_html_aed38d3bbfc9bef80b2aaca7f15c10170"><div class="ttname"><a href="classTarefa.html#aed38d3bbfc9bef80b2aaca7f15c10170">Tarefa::id</a></div><div class="ttdeci">int id</div><div class="ttdef"><b>Definition:</b> Tarefa.h:19</div></div>
+<div class="ttc" id="aclassTarefa_html_af7376caecdb778801afe50eac5ac24fd"><div class="ttname"><a href="classTarefa.html#af7376caecdb778801afe50eac5ac24fd">Tarefa::exibir</a></div><div class="ttdeci">virtual void exibir() const</div><div class="ttdoc">Exibe informações sobre a tarefa.</div><div class="ttdef"><b>Definition:</b> Tarefa.cpp:61</div></div>
+<div class="ttc" id="aclassTarefa_html_af8b8aeca1f94992a76524d8698797184"><div class="ttname"><a href="classTarefa.html#af8b8aeca1f94992a76524d8698797184">Tarefa::estaConcluida</a></div><div class="ttdeci">bool estaConcluida() const</div><div class="ttdoc">Verifica se a tarefa está concluída.</div><div class="ttdef"><b>Definition:</b> Tarefa.cpp:47</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

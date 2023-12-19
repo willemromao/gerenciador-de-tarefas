@@ -1,0 +1,4 @@
+<map id="TarefaAmanha" name="TarefaAmanha">
+<area shape="rect" id="node1" title="Classe que representa uma tarefa agendada para amanhã." alt="" coords="5,80,121,107"/>
+<area shape="rect" id="node2" href="$classTarefa.html" title="Classe que representa uma tarefa." alt="" coords="32,5,95,32"/>
+</map>

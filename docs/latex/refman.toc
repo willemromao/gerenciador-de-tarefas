@@ -1,0 +1,61 @@
+\@ifundefined {etoctocstyle}{\let \etoc@startlocaltoc \@gobble \let \etoc@settocdepth \@gobble \let \etoc@depthtag \@gobble \let \etoc@setlocaltop \@gobble }{}
+\babel@toc {brazil}{}\relax 
+\contentsline {chapter}{\numberline {1}Gerenciador de Tarefas}{1}{chapter.1}%
+\contentsline {subsection}{\numberline {1.0.1}Descrição do Projeto}{1}{subsection.1.0.1}%
+\contentsline {subsection}{\numberline {1.0.2}Tarefa.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{1}{subsection.1.0.2}%
+\contentsline {subsection}{\numberline {1.0.3}Tarefa.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{1}{subsection.1.0.3}%
+\contentsline {subsection}{\numberline {1.0.4}Gerenciador\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tarefas.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{2}{subsection.1.0.4}%
+\contentsline {subsection}{\numberline {1.0.5}Conclusão}{2}{subsection.1.0.5}%
+\contentsline {subsection}{\numberline {1.0.6}Compilação}{2}{subsection.1.0.6}%
+\contentsline {subsection}{\numberline {1.0.7}Menu}{2}{subsection.1.0.7}%
+\contentsline {chapter}{\numberline {2}Índice Hierárquico}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Hierarquia de Classes}{3}{section.2.1}%
+\contentsline {chapter}{\numberline {3}Índice dos Componentes}{5}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Lista de Classes}{5}{section.3.1}%
+\contentsline {chapter}{\numberline {4}Índice dos Arquivos}{7}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Lista de Arquivos}{7}{section.4.1}%
+\contentsline {chapter}{\numberline {5}Classes}{9}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Referência da Classe Tarefa}{9}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Descrição detalhada}{10}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}Construtores e Destrutores}{10}{subsection.5.1.2}%
+\contentsline {subsubsection}{\numberline {5.1.2.1}Tarefa()}{10}{subsubsection.5.1.2.1}%
+\contentsline {subsection}{\numberline {5.1.3}Funções membros}{10}{subsection.5.1.3}%
+\contentsline {subsubsection}{\numberline {5.1.3.1}atualizarTotalTarefas()}{11}{subsubsection.5.1.3.1}%
+\contentsline {subsubsection}{\numberline {5.1.3.2}estaConcluida()}{11}{subsubsection.5.1.3.2}%
+\contentsline {subsubsection}{\numberline {5.1.3.3}getDescricao()}{11}{subsubsection.5.1.3.3}%
+\contentsline {subsubsection}{\numberline {5.1.3.4}getId()}{11}{subsubsection.5.1.3.4}%
+\contentsline {subsubsection}{\numberline {5.1.3.5}getTotalTarefas()}{12}{subsubsection.5.1.3.5}%
+\contentsline {subsection}{\numberline {5.1.4}Amigas e Funções Relacionadas}{12}{subsection.5.1.4}%
+\contentsline {subsubsection}{\numberline {5.1.4.1}operator$<$$<$}{12}{subsubsection.5.1.4.1}%
+\contentsline {subsection}{\numberline {5.1.5}Atributos}{12}{subsection.5.1.5}%
+\contentsline {subsubsection}{\numberline {5.1.5.1}concluida}{12}{subsubsection.5.1.5.1}%
+\contentsline {subsubsection}{\numberline {5.1.5.2}descricao}{12}{subsubsection.5.1.5.2}%
+\contentsline {subsubsection}{\numberline {5.1.5.3}id}{13}{subsubsection.5.1.5.3}%
+\contentsline {subsubsection}{\numberline {5.1.5.4}totalTarefas}{13}{subsubsection.5.1.5.4}%
+\contentsline {section}{\numberline {5.2}Referência da Classe Tarefa\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Amanha}{13}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Descrição detalhada}{14}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Construtores e Destrutores}{14}{subsection.5.2.2}%
+\contentsline {subsubsection}{\numberline {5.2.2.1}TarefaAmanha()}{14}{subsubsection.5.2.2.1}%
+\contentsline {subsection}{\numberline {5.2.3}Funções membros}{14}{subsection.5.2.3}%
+\contentsline {subsubsection}{\numberline {5.2.3.1}atualizarTotalTarefasAmanha()}{15}{subsubsection.5.2.3.1}%
+\contentsline {subsubsection}{\numberline {5.2.3.2}getTotalTarefasAmanha()}{15}{subsubsection.5.2.3.2}%
+\contentsline {subsection}{\numberline {5.2.4}Atributos}{15}{subsection.5.2.4}%
+\contentsline {subsubsection}{\numberline {5.2.4.1}totalTarefasAmanha}{15}{subsubsection.5.2.4.1}%
+\contentsline {chapter}{\numberline {6}Arquivos}{17}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Referência do Arquivo src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Gerenciador\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tarefas.cpp}{17}{section.6.1}%
+\contentsline {subsection}{\numberline {6.1.1}Descrição detalhada}{18}{subsection.6.1.1}%
+\contentsline {subsection}{\numberline {6.1.2}Funções}{18}{subsection.6.1.2}%
+\contentsline {subsubsection}{\numberline {6.1.2.1}adicionarTarefa()}{18}{subsubsection.6.1.2.1}%
+\contentsline {subsubsection}{\numberline {6.1.2.2}adicionarTarefaAmanha()}{18}{subsubsection.6.1.2.2}%
+\contentsline {subsubsection}{\numberline {6.1.2.3}concluirTarefa()}{19}{subsubsection.6.1.2.3}%
+\contentsline {subsubsection}{\numberline {6.1.2.4}exibirTarefas()}{19}{subsubsection.6.1.2.4}%
+\contentsline {subsubsection}{\numberline {6.1.2.5}listarTarefasAmanha()}{19}{subsubsection.6.1.2.5}%
+\contentsline {subsubsection}{\numberline {6.1.2.6}main()}{20}{subsubsection.6.1.2.6}%
+\contentsline {subsubsection}{\numberline {6.1.2.7}salvarTarefas()}{20}{subsubsection.6.1.2.7}%
+\contentsline {section}{\numberline {6.2}Referência do Arquivo src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tarefa.cpp}{20}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}Descrição detalhada}{21}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {6.2.2}Funções}{21}{subsection.6.2.2}%
+\contentsline {subsubsection}{\numberline {6.2.2.1}operator$<$$<$()}{21}{subsubsection.6.2.2.1}%
+\contentsline {section}{\numberline {6.3}Referência do Arquivo src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tarefa.h}{21}{section.6.3}%
+\contentsline {subsection}{\numberline {6.3.1}Descrição detalhada}{22}{subsection.6.3.1}%
+\contentsline {chapter}{\'Indice Remissivo}{23}{section*.19}%

@@ -1,0 +1,317 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Gerenciador de Tarefas: Referência do Arquivo src/GerenciadorTarefas.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Gerenciador de Tarefas
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Busca','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Busca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Funções</a>  </div>
+  <div class="headertitle">
+<div class="title">Referência do Arquivo GerenciadorTarefas.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Implementação das funções do Gerenciador de Tarefas.  
+<a href="#details">Mais...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="Tarefa_8h_source.html">Tarefa.h</a>&quot;</code><br />
+<code>#include &lt;vector&gt;</code><br />
+<code>#include &lt;fstream&gt;</code><br />
+<code>#include &lt;sstream&gt;</code><br />
+<code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;algorithm&gt;</code><br />
+<code>#include &lt;iomanip&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Gráfico de dependência de inclusões para GerenciadorTarefas.cpp:</div>
+<div class="dyncontent">
+<div class="center"><img src="GerenciadorTarefas_8cpp__incl.png" border="0" usemap="#asrc_2GerenciadorTarefas_8cpp" alt=""/></div>
+<map name="asrc_2GerenciadorTarefas_8cpp" id="asrc_2GerenciadorTarefas_8cpp">
+<area shape="rect" title="Implementação das funções do Gerenciador de Tarefas." alt="" coords="143,5,342,32"/>
+<area shape="rect" href="Tarefa_8h.html" title="Declaração das classes Tarefa e TarefaAmanha." alt="" coords="56,80,131,107"/>
+<area shape="rect" title=" " alt="" coords="5,155,85,181"/>
+<area shape="rect" title=" " alt="" coords="123,155,186,181"/>
+<area shape="rect" title=" " alt="" coords="206,80,279,107"/>
+<area shape="rect" title=" " alt="" coords="304,80,379,107"/>
+<area shape="rect" title=" " alt="" coords="403,80,488,107"/>
+<area shape="rect" title=" " alt="" coords="512,80,587,107"/>
+</map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Funções</h2></td></tr>
+<tr class="memitem:a41e28bb4d9d18b22673799874520024e"><td class="memItemLeft" align="right" valign="top"><a id="a41e28bb4d9d18b22673799874520024e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GerenciadorTarefas_8cpp.html#a41e28bb4d9d18b22673799874520024e">exibirMenu</a> ()</td></tr>
+<tr class="memdesc:a41e28bb4d9d18b22673799874520024e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exibe o menu de opções do programa. <br /></td></tr>
+<tr class="separator:a41e28bb4d9d18b22673799874520024e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9b5438f3281286ecbef7a4f79854930"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GerenciadorTarefas_8cpp.html#aa9b5438f3281286ecbef7a4f79854930">exibirTarefas</a> (const std::vector&lt; <a class="el" href="classTarefa.html">Tarefa</a> * &gt; &amp;tarefas)</td></tr>
+<tr class="memdesc:aa9b5438f3281286ecbef7a4f79854930"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exibe a lista de tarefas.  <a href="GerenciadorTarefas_8cpp.html#aa9b5438f3281286ecbef7a4f79854930">Mais...</a><br /></td></tr>
+<tr class="separator:aa9b5438f3281286ecbef7a4f79854930"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d487477c2fe7e7bed76e67d8b454442"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GerenciadorTarefas_8cpp.html#a0d487477c2fe7e7bed76e67d8b454442">adicionarTarefa</a> (std::vector&lt; <a class="el" href="classTarefa.html">Tarefa</a> * &gt; &amp;tarefas)</td></tr>
+<tr class="memdesc:a0d487477c2fe7e7bed76e67d8b454442"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adiciona uma nova tarefa à lista.  <a href="GerenciadorTarefas_8cpp.html#a0d487477c2fe7e7bed76e67d8b454442">Mais...</a><br /></td></tr>
+<tr class="separator:a0d487477c2fe7e7bed76e67d8b454442"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f5ef61ac2cb14142f1e1fb382d58199"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GerenciadorTarefas_8cpp.html#a5f5ef61ac2cb14142f1e1fb382d58199">concluirTarefa</a> (std::vector&lt; <a class="el" href="classTarefa.html">Tarefa</a> * &gt; &amp;tarefas)</td></tr>
+<tr class="memdesc:a5f5ef61ac2cb14142f1e1fb382d58199"><td class="mdescLeft">&#160;</td><td class="mdescRight">Conclui e remove uma tarefa da lista.  <a href="GerenciadorTarefas_8cpp.html#a5f5ef61ac2cb14142f1e1fb382d58199">Mais...</a><br /></td></tr>
+<tr class="separator:a5f5ef61ac2cb14142f1e1fb382d58199"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a488e1dc8e3895e8e3403ef07384d25fa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GerenciadorTarefas_8cpp.html#a488e1dc8e3895e8e3403ef07384d25fa">adicionarTarefaAmanha</a> (std::vector&lt; <a class="el" href="classTarefa.html">Tarefa</a> * &gt; &amp;tarefas)</td></tr>
+<tr class="memdesc:a488e1dc8e3895e8e3403ef07384d25fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adiciona uma nova tarefa agendada para amanhã à lista.  <a href="GerenciadorTarefas_8cpp.html#a488e1dc8e3895e8e3403ef07384d25fa">Mais...</a><br /></td></tr>
+<tr class="separator:a488e1dc8e3895e8e3403ef07384d25fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43050275ee7ab922cc5c2190727da0c0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GerenciadorTarefas_8cpp.html#a43050275ee7ab922cc5c2190727da0c0">listarTarefasAmanha</a> (const std::vector&lt; <a class="el" href="classTarefa.html">Tarefa</a> * &gt; &amp;tarefas)</td></tr>
+<tr class="memdesc:a43050275ee7ab922cc5c2190727da0c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lista as tarefas agendadas para amanhã.  <a href="GerenciadorTarefas_8cpp.html#a43050275ee7ab922cc5c2190727da0c0">Mais...</a><br /></td></tr>
+<tr class="separator:a43050275ee7ab922cc5c2190727da0c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6666224a71db3b0438a93ce244cd3ea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GerenciadorTarefas_8cpp.html#ac6666224a71db3b0438a93ce244cd3ea">salvarTarefas</a> (const std::vector&lt; <a class="el" href="classTarefa.html">Tarefa</a> * &gt; &amp;tarefas)</td></tr>
+<tr class="memdesc:ac6666224a71db3b0438a93ce244cd3ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Salva as tarefas no arquivo "tarefas.txt".  <a href="GerenciadorTarefas_8cpp.html#ac6666224a71db3b0438a93ce244cd3ea">Mais...</a><br /></td></tr>
+<tr class="separator:ac6666224a71db3b0438a93ce244cd3ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GerenciadorTarefas_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
+<tr class="memdesc:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Função principal do programa.  <a href="GerenciadorTarefas_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">Mais...</a><br /></td></tr>
+<tr class="separator:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descrição detalhada</h2>
+<div class="textblock"><p>Implementação das funções do Gerenciador de Tarefas. </p>
+<p>Este arquivo contém a implementação das funções responsáveis por gerenciar tarefas, como adicionar, exibir, concluir e agendar tarefas para amanhã.</p>
+<dl class="section author"><dt>Autor</dt><dd>Francisco Willem Romão Moreira </dd></dl>
+<dl class="section date"><dt>Data</dt><dd>2023-12-18 </dd></dl>
+</div><h2 class="groupheader">Funções</h2>
+<a id="a0d487477c2fe7e7bed76e67d8b454442"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d487477c2fe7e7bed76e67d8b454442">&#9670;&nbsp;</a></span>adicionarTarefa()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void adicionarTarefa </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="classTarefa.html">Tarefa</a> * &gt; &amp;&#160;</td>
+          <td class="paramname"><em>tarefas</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Adiciona uma nova tarefa à lista. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tarefas</td><td>Vetor de ponteiros para as tarefas. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a488e1dc8e3895e8e3403ef07384d25fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a488e1dc8e3895e8e3403ef07384d25fa">&#9670;&nbsp;</a></span>adicionarTarefaAmanha()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void adicionarTarefaAmanha </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="classTarefa.html">Tarefa</a> * &gt; &amp;&#160;</td>
+          <td class="paramname"><em>tarefas</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Adiciona uma nova tarefa agendada para amanhã à lista. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tarefas</td><td>Vetor de ponteiros para as tarefas. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a5f5ef61ac2cb14142f1e1fb382d58199"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f5ef61ac2cb14142f1e1fb382d58199">&#9670;&nbsp;</a></span>concluirTarefa()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void concluirTarefa </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="classTarefa.html">Tarefa</a> * &gt; &amp;&#160;</td>
+          <td class="paramname"><em>tarefas</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Conclui e remove uma tarefa da lista. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tarefas</td><td>Vetor de ponteiros para as tarefas. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa9b5438f3281286ecbef7a4f79854930"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9b5438f3281286ecbef7a4f79854930">&#9670;&nbsp;</a></span>exibirTarefas()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void exibirTarefas </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="classTarefa.html">Tarefa</a> * &gt; &amp;&#160;</td>
+          <td class="paramname"><em>tarefas</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Exibe a lista de tarefas. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tarefas</td><td>Vetor de ponteiros para as tarefas. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a43050275ee7ab922cc5c2190727da0c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43050275ee7ab922cc5c2190727da0c0">&#9670;&nbsp;</a></span>listarTarefasAmanha()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void listarTarefasAmanha </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="classTarefa.html">Tarefa</a> * &gt; &amp;&#160;</td>
+          <td class="paramname"><em>tarefas</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Lista as tarefas agendadas para amanhã. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tarefas</td><td>Vetor de ponteiros para as tarefas. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae66f6b31b5ad750f1fe042a706a4e3d4">&#9670;&nbsp;</a></span>main()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int main </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Função principal do programa. </p>
+<dl class="section return"><dt>Retorna</dt><dd>0 ao finalizar o programa. </dd></dl>
+
+</div>
+</div>
+<a id="ac6666224a71db3b0438a93ce244cd3ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6666224a71db3b0438a93ce244cd3ea">&#9670;&nbsp;</a></span>salvarTarefas()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void salvarTarefas </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="classTarefa.html">Tarefa</a> * &gt; &amp;&#160;</td>
+          <td class="paramname"><em>tarefas</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Salva as tarefas no arquivo "tarefas.txt". </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tarefas</td><td>Vetor de ponteiros para as tarefas. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

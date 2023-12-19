@@ -1,0 +1,161 @@
+\hypertarget{GerenciadorTarefas_8cpp}{}\doxysection{Referência do Arquivo src/\+Gerenciador\+Tarefas.cpp}
+\label{GerenciadorTarefas_8cpp}\index{src/GerenciadorTarefas.cpp@{src/GerenciadorTarefas.cpp}}
+
+
+Implementação das funções do Gerenciador de Tarefas.  
+
+
+{\ttfamily \#include \char`\"{}Tarefa.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$algorithm$>$}\newline
+{\ttfamily \#include $<$iomanip$>$}\newline
+Gráfico de dependência de inclusões para Gerenciador\+Tarefas.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{GerenciadorTarefas_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Funções}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{GerenciadorTarefas_8cpp_a41e28bb4d9d18b22673799874520024e}\label{GerenciadorTarefas_8cpp_a41e28bb4d9d18b22673799874520024e}} 
+void \mbox{\hyperlink{GerenciadorTarefas_8cpp_a41e28bb4d9d18b22673799874520024e}{exibir\+Menu}} ()
+\begin{DoxyCompactList}\small\item\em Exibe o menu de opções do programa. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{GerenciadorTarefas_8cpp_aa9b5438f3281286ecbef7a4f79854930}{exibir\+Tarefas}} (const std\+::vector$<$ \mbox{\hyperlink{classTarefa}{Tarefa}} $\ast$ $>$ \&tarefas)
+\begin{DoxyCompactList}\small\item\em Exibe a lista de tarefas. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{GerenciadorTarefas_8cpp_a0d487477c2fe7e7bed76e67d8b454442}{adicionar\+Tarefa}} (std\+::vector$<$ \mbox{\hyperlink{classTarefa}{Tarefa}} $\ast$ $>$ \&tarefas)
+\begin{DoxyCompactList}\small\item\em Adiciona uma nova tarefa à lista. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{GerenciadorTarefas_8cpp_a5f5ef61ac2cb14142f1e1fb382d58199}{concluir\+Tarefa}} (std\+::vector$<$ \mbox{\hyperlink{classTarefa}{Tarefa}} $\ast$ $>$ \&tarefas)
+\begin{DoxyCompactList}\small\item\em Conclui e remove uma tarefa da lista. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{GerenciadorTarefas_8cpp_a488e1dc8e3895e8e3403ef07384d25fa}{adicionar\+Tarefa\+Amanha}} (std\+::vector$<$ \mbox{\hyperlink{classTarefa}{Tarefa}} $\ast$ $>$ \&tarefas)
+\begin{DoxyCompactList}\small\item\em Adiciona uma nova tarefa agendada para amanhã à lista. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{GerenciadorTarefas_8cpp_a43050275ee7ab922cc5c2190727da0c0}{listar\+Tarefas\+Amanha}} (const std\+::vector$<$ \mbox{\hyperlink{classTarefa}{Tarefa}} $\ast$ $>$ \&tarefas)
+\begin{DoxyCompactList}\small\item\em Lista as tarefas agendadas para amanhã. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{GerenciadorTarefas_8cpp_ac6666224a71db3b0438a93ce244cd3ea}{salvar\+Tarefas}} (const std\+::vector$<$ \mbox{\hyperlink{classTarefa}{Tarefa}} $\ast$ $>$ \&tarefas)
+\begin{DoxyCompactList}\small\item\em Salva as tarefas no arquivo \char`\"{}tarefas.\+txt\char`\"{}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{GerenciadorTarefas_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\begin{DoxyCompactList}\small\item\em Função principal do programa. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrição detalhada}
+Implementação das funções do Gerenciador de Tarefas. 
+
+Este arquivo contém a implementação das funções responsáveis por gerenciar tarefas, como adicionar, exibir, concluir e agendar tarefas para amanhã.
+
+\begin{DoxyAuthor}{Autor}
+Francisco Willem Romão Moreira 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Data}
+2023-\/12-\/18 
+\end{DoxyDate}
+
+
+\doxysubsection{Funções}
+\mbox{\Hypertarget{GerenciadorTarefas_8cpp_a0d487477c2fe7e7bed76e67d8b454442}\label{GerenciadorTarefas_8cpp_a0d487477c2fe7e7bed76e67d8b454442}} 
+\index{GerenciadorTarefas.cpp@{GerenciadorTarefas.cpp}!adicionarTarefa@{adicionarTarefa}}
+\index{adicionarTarefa@{adicionarTarefa}!GerenciadorTarefas.cpp@{GerenciadorTarefas.cpp}}
+\doxysubsubsection{\texorpdfstring{adicionarTarefa()}{adicionarTarefa()}}
+{\footnotesize\ttfamily void adicionar\+Tarefa (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{classTarefa}{Tarefa}} $\ast$ $>$ \&}]{tarefas }\end{DoxyParamCaption})}
+
+
+
+Adiciona uma nova tarefa à lista. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em tarefas} & Vetor de ponteiros para as tarefas. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{GerenciadorTarefas_8cpp_a488e1dc8e3895e8e3403ef07384d25fa}\label{GerenciadorTarefas_8cpp_a488e1dc8e3895e8e3403ef07384d25fa}} 
+\index{GerenciadorTarefas.cpp@{GerenciadorTarefas.cpp}!adicionarTarefaAmanha@{adicionarTarefaAmanha}}
+\index{adicionarTarefaAmanha@{adicionarTarefaAmanha}!GerenciadorTarefas.cpp@{GerenciadorTarefas.cpp}}
+\doxysubsubsection{\texorpdfstring{adicionarTarefaAmanha()}{adicionarTarefaAmanha()}}
+{\footnotesize\ttfamily void adicionar\+Tarefa\+Amanha (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{classTarefa}{Tarefa}} $\ast$ $>$ \&}]{tarefas }\end{DoxyParamCaption})}
+
+
+
+Adiciona uma nova tarefa agendada para amanhã à lista. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em tarefas} & Vetor de ponteiros para as tarefas. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{GerenciadorTarefas_8cpp_a5f5ef61ac2cb14142f1e1fb382d58199}\label{GerenciadorTarefas_8cpp_a5f5ef61ac2cb14142f1e1fb382d58199}} 
+\index{GerenciadorTarefas.cpp@{GerenciadorTarefas.cpp}!concluirTarefa@{concluirTarefa}}
+\index{concluirTarefa@{concluirTarefa}!GerenciadorTarefas.cpp@{GerenciadorTarefas.cpp}}
+\doxysubsubsection{\texorpdfstring{concluirTarefa()}{concluirTarefa()}}
+{\footnotesize\ttfamily void concluir\+Tarefa (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{classTarefa}{Tarefa}} $\ast$ $>$ \&}]{tarefas }\end{DoxyParamCaption})}
+
+
+
+Conclui e remove uma tarefa da lista. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em tarefas} & Vetor de ponteiros para as tarefas. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{GerenciadorTarefas_8cpp_aa9b5438f3281286ecbef7a4f79854930}\label{GerenciadorTarefas_8cpp_aa9b5438f3281286ecbef7a4f79854930}} 
+\index{GerenciadorTarefas.cpp@{GerenciadorTarefas.cpp}!exibirTarefas@{exibirTarefas}}
+\index{exibirTarefas@{exibirTarefas}!GerenciadorTarefas.cpp@{GerenciadorTarefas.cpp}}
+\doxysubsubsection{\texorpdfstring{exibirTarefas()}{exibirTarefas()}}
+{\footnotesize\ttfamily void exibir\+Tarefas (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{classTarefa}{Tarefa}} $\ast$ $>$ \&}]{tarefas }\end{DoxyParamCaption})}
+
+
+
+Exibe a lista de tarefas. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em tarefas} & Vetor de ponteiros para as tarefas. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{GerenciadorTarefas_8cpp_a43050275ee7ab922cc5c2190727da0c0}\label{GerenciadorTarefas_8cpp_a43050275ee7ab922cc5c2190727da0c0}} 
+\index{GerenciadorTarefas.cpp@{GerenciadorTarefas.cpp}!listarTarefasAmanha@{listarTarefasAmanha}}
+\index{listarTarefasAmanha@{listarTarefasAmanha}!GerenciadorTarefas.cpp@{GerenciadorTarefas.cpp}}
+\doxysubsubsection{\texorpdfstring{listarTarefasAmanha()}{listarTarefasAmanha()}}
+{\footnotesize\ttfamily void listar\+Tarefas\+Amanha (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{classTarefa}{Tarefa}} $\ast$ $>$ \&}]{tarefas }\end{DoxyParamCaption})}
+
+
+
+Lista as tarefas agendadas para amanhã. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em tarefas} & Vetor de ponteiros para as tarefas. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{GerenciadorTarefas_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{GerenciadorTarefas_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{GerenciadorTarefas.cpp@{GerenciadorTarefas.cpp}!main@{main}}
+\index{main@{main}!GerenciadorTarefas.cpp@{GerenciadorTarefas.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Função principal do programa. 
+
+\begin{DoxyReturn}{Retorna}
+0 ao finalizar o programa. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{GerenciadorTarefas_8cpp_ac6666224a71db3b0438a93ce244cd3ea}\label{GerenciadorTarefas_8cpp_ac6666224a71db3b0438a93ce244cd3ea}} 
+\index{GerenciadorTarefas.cpp@{GerenciadorTarefas.cpp}!salvarTarefas@{salvarTarefas}}
+\index{salvarTarefas@{salvarTarefas}!GerenciadorTarefas.cpp@{GerenciadorTarefas.cpp}}
+\doxysubsubsection{\texorpdfstring{salvarTarefas()}{salvarTarefas()}}
+{\footnotesize\ttfamily void salvar\+Tarefas (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{classTarefa}{Tarefa}} $\ast$ $>$ \&}]{tarefas }\end{DoxyParamCaption})}
+
+
+
+Salva as tarefas no arquivo \char`\"{}tarefas.\+txt\char`\"{}. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em tarefas} & Vetor de ponteiros para as tarefas. \\
+\hline
+\end{DoxyParams}
