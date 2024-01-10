@@ -22,10 +22,6 @@ O arquivo principal do programa implementa as funções de interação com o usu
 
 É importante observar que a desalocação de memória é realizada no final do programa para evitar vazamento de memória. Além disso, as funções de salvar tarefas em um arquivo e listar tarefas para o dia seguinte demonstram o uso de manipulação de arquivos.
 
-### Conclusão
-
-O projeto fornece uma implementação prática de diversos conceitos de programação em C++, demonstrando a aplicação de boas práticas, herança, manipulação de memória, interação com o usuário e persistência de dados. O código está estruturado de forma modular, facilitando a compreensão e manutenção do sistema.
-
 ### Compilação
 
 Um método mais prático seria fazendo uso do CMake e na pasta raíz do projeto executar os comandos abaixo:
